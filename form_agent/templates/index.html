@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Form Agent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        #statusMessage {
+            padding: 10px 0;
+            color: #31708f;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+            display: none;
+        }
+        h1, p {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Voice to Form Agent</h1>
+        <p>Use your voice to fill out this form, start by clicking anywhere on the page.</p>
+
+        <div id="statusMessage"></div>
+        <hr/>
+        <h2>Personal Details Form</h2>
+        <form id="personalDetailsForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
