@@ -1,4 +1,4 @@
-# How it works
+# Voice to Form: Submitting a website form using AI
 
 _The tech: Built using a flask app, python server and a javascript client. Note, I am not a full-stack dev and have no desire to become one. This was my first full website build and I learned a lot about JS!_
 
